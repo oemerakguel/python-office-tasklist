@@ -6,4 +6,11 @@ def add_task():
     print(f"Die Aufgabe {task} wurde zur Liste hinzugefügt.")
 add_task()
 
-print(tasklist)
+def show_tasklist():
+    if tasklist == None:
+        print("Your tasklist is empty.")
+    else:
+        print("Your tasklist:")
+        for task in tasklist:
+            print(task)
+show_tasklist()
